@@ -1,0 +1,15 @@
+{% extends "src/templates/layouts/layout.nunjucks" %}
+
+{% block title %}
+    {{tag}} Posts
+{% endblock %}
+
+{% block content %}
+
+    <h1>
+        {{tag}} Posts
+    </h1>
+
+    {% include "../templates/partials/post-list.nunjucks" %}
+
+{% endblock %}

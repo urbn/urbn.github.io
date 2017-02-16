@@ -1,0 +1,27 @@
+{% if pagination %}
+
+    <nav role="navigation">
+
+        {% if pagination.previous %}
+            <a href="{{ pagination.previous.path }}"><!--
+                --><span class="fa fa-arrow-left"></span><!--
+            --></a>
+        {% else %}
+            <span class="fa fa-arrow-left"></span>
+        {% endif %}
+
+        <span>
+            Page {{ pagination.num }} of {{ pagination.pages.length }}
+        </span>
+
+        {% if pagination.next %}
+            <a href="{{ pagination.next.path }}"><!--
+                --><span class="fa fa-arrow-right"></span><!--
+            --></a>
+        {% else %}
+            <span class="fa fa-arrow-right"></span>
+        {% endif %}
+
+    </nav>
+
+{% endif %}

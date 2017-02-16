@@ -1,0 +1,9 @@
+{% extends "src/templates/layouts/layout.nunjucks" %}
+
+{% block title %}
+    Blog Posts
+{% endblock %}
+
+{% block body %}
+    {% include "src/templates/partials/post-list.nunjucks" %}
+{% endblock %}
